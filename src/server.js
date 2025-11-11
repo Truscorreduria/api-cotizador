@@ -10,6 +10,7 @@ const segurosRoutes = require("./routes/seguros")
 const siniestrosRoutes = require("./routes/siniestros")
 const recomendadosRoutes = require("./routes/recomendados")
 const usuariosRoutes = require("./routes/usuarios")
+const catalogosRoutes = require("./routes/catalogos")
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -41,6 +42,7 @@ app.use("/api/seguros", segurosRoutes)
 app.use("/api/siniestros", siniestrosRoutes)
 app.use("/api/recomendados", recomendadosRoutes)
 app.use("/api/usuarios", usuariosRoutes)
+app.use("/api/catalogos", catalogosRoutes)
 
 // Ruta de salud
 app.get("/api/health", (req, res) => {
