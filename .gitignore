@@ -8,7 +8,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Archivos de entorno
-#.env
+.env
 .env.local
 .env.*.local
 
